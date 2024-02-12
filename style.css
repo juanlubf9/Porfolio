@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    margin: 0;
+    .izquierda {
+        width: 600px;
+        background-color: #fefefe;
+        position: fixed;
+        .cabecera {
+            background-color: #d0ffd7;
+            display: flex;
+            font: 12px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            height: 9vh;
+            a {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                width: 50%;
+                cursor: pointer;
+                height: 100%;
+                border: none;
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    background-color: rgba(181, 253, 168, 0.5);
+                }
+            }
+            .linkedIn {
+                img {
+                    margin-left: 90px;
+                }
+            }
+            .email {
+                img {
+                    margin-left: 45px;
+                }
+            }
+        }
+        .perfil {
+            display: grid;
+            place-items: left;
+            margin-left: 70px;
+            height: 100vh;
+            .foto {
+                margin-top: 70px;
+                border-radius: 20px;
+            }
+            .nombre {
+                margin-top: -100px;
+                font-size: 50px;
+            }
+            h3 {
+                margin-top: -70px;
+                font-size: 20px;
+                border-top: 3px solid #00ad25;
+                width: 20%;
+            }
+            .sobre {
+                margin-top: -130px;
+                margin-right: 50px;
+                font-size: 16px;
+                text-align: justify;
+            }
+        }
+    }
+    .derecha {
+        width: 1000px;
+        background-color: #e1e1e1;
+        margin-left: 600px;
+        #cabecera {
+            background-color: #b5e2b8;
+            height: 9vh;
+            position: fixed;
+            width: 100%;
+            #imprimir{
+                margin: 15px 0 0 700px;
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #767676;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover{
+                    background-color: #c2c2c2;
+                }
+            }
+        }
+        .relleno {
+            margin: 120px 0px 50px 100px;
+            h2 {
+                border-top: 3px solid #00ad25;
+                width: 30%;
+            }
+            ul {
+                list-style: none;
+                margin-top: 30px;
+                margin-bottom: 100px;
+                li {
+                    margin-bottom: 30px;
+                    h3 {
+                        font-size: 20px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            #mostrarMas {
+                margin-left: 300px;
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #767676;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover{
+                    background-color: #c2c2c2;
+                }
+            }
+        }
+    }   
+}
